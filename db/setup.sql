@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS market_test;
+DROP DATABASE IF EXISTS marketplace;
+
+CREATE DATABASE market_test;
+CREATE DATABASE marketplace;

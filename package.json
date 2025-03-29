@@ -1,0 +1,24 @@
+{
+    "dependencies": {
+        "bcryptjs": "^3.0.2",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "husky": "^9.1.7",
+        "jsonwebtoken": "^9.0.2",
+        "pg": "^8.13.3",
+        "pg-format": "^1.0.4",
+        "supertest": "^7.0.0"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    },
+    "scripts": {
+        "setup-dbs": "psql -f ./db/setup.sql",
+        "seed": "node ./db/seeds/run-seed.js",
+        "test": "jest",
+        "prepare": "husky install",
+        "start": "node listen.js",
+        "seed-prod": "NODE_ENV=production npm run seed"
+    }
+}
