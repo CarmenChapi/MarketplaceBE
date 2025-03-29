@@ -7,7 +7,7 @@ const {
 } = require("../controllers/users");
 
 
-router.get("/users", getAllCollections);
+router.get("/", getAllUsers);
 // router.get("/:user_mail", getCollectionByUser);
 // router.get("/id/:id_collection", getCollectionById);
 
