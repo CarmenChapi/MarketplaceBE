@@ -4,7 +4,7 @@ const app = express();
 app.use(cors());
 
 
-const { getAllEndpoints } = require("./controllers/endpoints")
+//const { getAllEndpoints } = require("./controllers/endpoints")
 
 const usersRoutes = require("./routes/users");
 
