@@ -3,11 +3,13 @@ const router = express.Router();
 
 
 const {
-  getAllUsers,
+  getAllUsers, getUserById, postUser
 } = require("../controllers/users");
 
 
 router.get("/", getAllUsers);
+router.get("/:user_id", getUserById);
+router.post("/register", postUser);
 // router.get("/:user_mail", getCollectionByUser);
 // router.get("/id/:id_collection", getCollectionById);
 
